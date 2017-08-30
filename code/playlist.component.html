@@ -1,2 +1,22 @@
 <h2>my playlist goes here</h2>
 
+<table class="table table-hover">
+<thead>
+<tr>
+	<td>id</td>
+	<td>title</td>
+	<td>description</td>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="#v of videos" (click)="onSelect(v)">
+	<td>{{v.id}}</td>
+	<td>{{v.title}}</td>
+	<td>{{v.desc}}</td>
+</tr>
+</tbody>
+
+
+
+
+</table>
